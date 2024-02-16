@@ -29,66 +29,96 @@ Exiting the program.
 import 'dart:io';
 
 void main() {
-  List<String> food = ['Dhosa', 'Idli', 'Bhajipau', 'Pizza'];
+  int choice, x, y, sum;
 
-  while (true) {
-    print("$food\n");
-    print("Menu:");
-    print("1. Add Food");
-    print("2. Update Food");
-    print("3. Delete Food");
-    print("4. View Foods");
-    print("5. Exit");
+  print("press 1 for sum of all elements..");
+  print("press 2 for rowsum..");
+  print("press 3 for colom sum..");
+  print("press 4 for daigonal..");
+  print("press 5 for anti daigonal..");
+  print("press 6 for exit progaram..");
 
-    stdout.write("Enter your choice: ");
-    int choice = int.parse(stdin.readLineSync()!);
-    print("\n");
+  stdout.write("Enter your choice :- ");
+  choice = int.parse(stdin.readLineSync()!);
 
-    switch (choice) {
-      case 1:
-        stdout.write("Enter the food to add: ");
-        String newFood = stdin.readLineSync()!;
-        food.add(newFood);
-        print("$newFood added.");
-        break;
-
-      case 2:
-        stdout.write("Enter the index of the food to update: ");
-        int index = int.parse(stdin.readLineSync()!);
-        if (index >= 0 && index < food.length) {
-          stdout.write("Enter the updated food: ");
-          String updatedFood = stdin.readLineSync()!;
-          food[index] = updatedFood;
-          print("Food updated.");
-        } else {
-          print("Invalid index.");
+  List a = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+  List b = [
+    [5, 5, 5],
+    [5, 5, 5],
+    [5, 5, 5]
+  ];
+  List c = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+  ];
+  switch (choice) {
+    case 1:
+      for (int i = 0; i <= 2; i++) {
+        for (int j = 0; j <= 2; j++) {
+          c[i][j] = a[i][j] + b[i][j];
         }
-        break;
+      }
 
-      case 3:
-        stdout.write("Enter the index of the food to delete: ");
-        int deleteIndex = int.parse(stdin.readLineSync()!);
-        if (deleteIndex >= 0 && deleteIndex < food.length) {
-          String deletedFood = food.removeAt(deleteIndex);
-          print("$deletedFood deleted.");
-        } else {
-          print("Invalid index.");
+      print("$c");
+      break;
+    case 2:
+      stdout.write("Enter your  row number ");
+      x = int.parse(stdin.readLineSync()!);
+      for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+          if (i == x) {
+            sum = a[x][j] + b[x][j];
+            print("$sum");
+          }
         }
-        break;
+      }
+      break;
 
-      case 4:
-        print("Food List:");
-        for (int i = 0; i < food.length; i++) {
-          print("Food $i: ${food[i]}");
+    case 3:
+      stdout.write("Enter your  colom number ");
+      y = int.parse(stdin.readLineSync()!);
+      for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+          if (i == y) {
+            sum = a[i][y] + b[i][y];
+            print("$sum");
+          }
         }
-        break;
+      }
+      break;
 
-      case 5:
-        print("Exiting the program.");
-        return;
+    case 4:
+      for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+          if (i == j) {
+            sum = a[i][j] + b[i][j];
+            print("$sum");
+          }
+        }
+      }
+      break;
 
-      default:
-        print("Invalid choice. Please select a valid option.");
-    }
+    case 5:
+      for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+          if (i + j == a[i][j] - 1) {
+            sum = a[i][j] + b[i][j];
+            print("$sum");
+          }
+        }
+      }
+      break;
+
+    case 6:
+      stdout.write("data finish......");
+      break;
+    default:
+      stdout.write("invlid input....");
+      break;
   }
 }
