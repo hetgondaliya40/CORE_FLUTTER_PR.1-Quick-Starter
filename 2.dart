@@ -1,3 +1,19 @@
+/*
+Write a Dart program to find largest number in an array.
+Enter any 10 numbers: 
+6
+7
+8
+3
+5
+33
+99
+1
+2
+3
+
+The largest number is: 99
+*/
 import 'dart:io';
 
 void main() {
