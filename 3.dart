@@ -1,29 +1,4 @@
 /*Write a Dart program to Insert, Delete, Update and View operations on the elements in an array using menu-driven programming approach.
-[Dhosa, Idli, Bhajipau, Pizza]
-
-Menu:
-1. Add Food
-2. Update Food
-3. Delete Food
-4. View Foods
-5. Exit
-Enter your choice: 1
-
-
-Enter the food to add: dhh
-dhh added.
-[Dhosa, Idli, Bhajipau, Pizza, dhh]
-
-Menu:
-1. Add Food
-2. Update Food
-3. Delete Food
-4. View Foods
-5. Exit
-Enter your choice: 5
-
-
-Exiting the program.
 
 1 */
 import 'dart:io';
