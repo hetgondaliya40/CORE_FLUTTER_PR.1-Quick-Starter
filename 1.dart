@@ -1,3 +1,10 @@
+/*Write a Dart program to to print all negative elements in an array.
+
+ENTER ANY NUMBER
+2
+NUMBER IS POSITIVE
+
+ */
 import 'dart:io';
 
 void main() {
