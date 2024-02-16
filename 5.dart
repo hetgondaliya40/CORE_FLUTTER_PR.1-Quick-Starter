@@ -1,3 +1,82 @@
+/*Write a Dart program to find below mentioned operations on the 3x3 array using menu-driven programming approach.
+Perform below all mentioned by user choice:
+• Sum of all elements
+• Sum of specific Row
+• Sum of specific Column
+• Sum of diagonal elements
+• Sum of antidiagonal elements
+• Press 0 for exit
+
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 1
+Sum of all elements: 495
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 2
+Enter row number : 2
+Sum of row 2: 165
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 3
+Enter column number : 2
+Sum of column 2: 165
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 4
+Sum of diagonal elements: 165
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 5
+Sum of anti-diagonal elements: 165
+
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+1. Sum of all elements
+2. Sum of a specific row
+3. Sum of a specific column
+4. Sum of diagonal elements
+5. Sum of anti-diagonal elements
+0. Exit
+Enter your choice: 0
+[[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+
+ */
 import 'dart:io';
 
 void main() {
